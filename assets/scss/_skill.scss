@@ -1,0 +1,29 @@
+.progress {
+	margin-bottom: 62px;
+	border-radius: 4px;
+    height: 12px;
+    background: $black;
+    &:last-child{
+        margin-bottom: none;
+    }
+}
+.progress-bar {
+	background-color: $theme-color;
+}
+.skill-wraper {
+    & h5 {
+        font-size: 18px;
+        color: $white;
+        font-weight: 400;
+        margin-bottom: 15px;
+    }
+}
+.skill-title {
+    overflow: hidden;
+    & h5 {
+        float: left;
+    }
+    & span {
+        float: right;
+    }
+}

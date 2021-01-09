@@ -1,0 +1,22 @@
+.section-title {
+    & h2 {
+        font-size: 30px;
+        color: $theme-color;
+        margin: 0;
+        font-weight: 600;
+        letter-spacing: .5px;
+        position: relative;
+        text-transform: uppercase;
+        &::before{
+            position: absolute;
+            content: "";
+            height: 2px;
+            width: 80px;
+            background: $theme-color;
+            bottom: -15px;
+            margin: auto;
+            left: 0;
+            right: 0;
+        }
+      }
+}

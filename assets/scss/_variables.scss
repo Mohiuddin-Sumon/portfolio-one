@@ -1,0 +1,33 @@
+// Font Family
+$Raleway: 'Raleway', sans-serif;
+
+// Colors ---------------
+$white: #ffffff;
+$black: #292929;
+$black-light: #353535;
+$grey:#f9f9f9;
+$theme-color: #f3971b;
+$theme-light-color: #353535;
+$body-text-color: #c2c0c3;
+$hr-border-color:#eceff8;
+
+
+// Heading Color
+$heading-color: #ffffff;
+
+// Soft color
+$black-soft:#7e7e7e;
+
+
+// Responsive Variables
+$laptop: 'only screen and (min-width: 1200px) and (max-width: 1600px)';
+$lg : 'only screen and (min-width: 992px) and (max-width: 1200px)';
+$md:'only screen and (min-width: 768px) and (max-width: 991px)';
+$xs:'(max-width: 767px)';
+$sm: 'only screen and (min-width: 576px) and (max-width: 767px)';
+
+
+// @media #{$laptop}{
+//     max-width: 100%;
+// }
+

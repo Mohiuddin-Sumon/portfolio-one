@@ -1,0 +1,39 @@
+.services{
+    padding: 40px;
+    background: $black-light;
+    position: relative;
+    &__icon{
+        & i{
+            font-size: 40px;
+            color: $theme-color;
+            margin-bottom: 30px;
+        }
+    }
+    &::before{
+        position: absolute;
+        content: "";
+        background: #f3971b;
+        height: 4px;
+        width: 0%;
+        left: 0;
+        bottom: 0;
+        transition: .3s;
+    }
+    &:hover{
+        &::before{
+            width: 100%;
+        }
+    }
+}
+
+  .sercices{
+      &__text {
+          & h4 {
+            margin: 0;
+            margin-bottom: 20px;
+          }
+          & p{
+              margin: 0;
+          }
+      }
+  }

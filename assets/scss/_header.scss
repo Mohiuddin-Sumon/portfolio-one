@@ -1,0 +1,88 @@
+.logo {
+    & a {
+        font-size: 30px;
+        color: $white;
+        font-weight: 700;
+        letter-spacing: 2px;
+        & span {
+            color: #f3971b;
+        }
+    }
+}
+.transparent-header {
+	position: absolute;
+	left: 0;
+	top: 0;
+    right: 0;
+    z-index: 1;
+}
+.main-menu {
+    & ul {
+       & li {
+            display: inline-block;
+            margin-left: 30px;
+            position: relative;
+            @media #{$md}{
+                margin-left: 12px;
+            }
+            &.active{
+                & a{
+                    color: $theme-color;
+                    &::before{
+                        width: 100%;
+                    }
+                }
+            }
+            &  a {
+                font-size: 16px;
+                color: $white;
+                font-weight: 600;
+                text-transform: uppercase;
+                display: inline-block;
+                padding: 18px 0;
+                transition: .3s;
+                &::before{
+                    position: absolute;
+                    content: "";
+                    background: $theme-color;
+                    height: 2px;
+                    width: 0;
+                    top: 80%;
+                    transition: .3s;
+                }
+              }
+              &:hover{
+                & a{
+                    &::before{
+                        width: 100%;
+                    }
+                }
+              }
+          }
+    }
+}
+
+// sticky menu
+.sticky {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	background: $black;
+	z-index: 9999;
+	width: 100%;
+	animation: 400ms ease-in-out 0s normal none 1 running fadeInDown;
+	box-shadow: 0 10px 15px rgba(25, 25, 25, 0.1);
+}
+
+// meanmenu
+.mean-container a.meanmenu-reveal {
+	margin-top: -35px;
+}
+.transparent-header .mean-container a.meanmenu-reveal span {
+	background: $theme-color;
+}
+.transparent-header .mean-container a.meanmenu-reveal {
+    border: 1px solid $theme-color;
+    color: $theme-color;
+}
